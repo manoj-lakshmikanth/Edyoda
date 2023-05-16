@@ -1,38 +1,326 @@
-.App {
-  text-align: center;
+.container {
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.panels {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+/**********************Navbar styling******************/
+.navbar {
+  background-color: #ffffff;
+  height: 72px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  /* border: 1px solid red; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.lh {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 70px;
+  margin: 13.5px auto 13.5px 106.5px;
+  /* margin-left: 106.5px; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*************************Navbar left part styling*******************/
+
+.lh > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.lh > h1 {
+  width: 158px;
+  height: 45px;
+
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 38px;
+  line-height: 45px;
+
+  background: linear-gradient(90.72deg, #0096ff 42.18%, #0048ff 93.77%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  /* text-fill-color: transparent; */
+}
+
+/*************************Navbar right part styling*******************/
+
+.rh {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 70px;
+  margin-right: 106.5px;
+}
+
+.rh button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 42px;
+  border: none;
+  color: rgba(255, 255, 255, 1);
+  font-weight: bold;
+  background: linear-gradient(266.79deg, #0048ff 4.63%, #0096ff 100%);
+  border-radius: 52px;
+}
+
+/*********************Leftpanel styling********************************/
+
+.left_panel {
+  /* border: 1px solid green; */
+  position: absolute;
+  top: 140px;
+  left: 155px;
+  /* margin: 70px 977px 230px 144px; */
+  width: 750px;
+  /* height: 708px; */
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0px;
+  width: 750px;
+  /* height: 125px; */
+  /* flex: none;
+  order: 0;
+  flex-grow: 0; */
+}
+
+.heading > div {
+  /* border: 1px solid green; */
+  width: 799px;
+  /* height: 30px; */
+  margin: 0px;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 125%;
+  /* identical to box height, or 70px */
+
+  /* display: flex;
+  align-items: center;
+  letter-spacing: 0.2px; */
+
+  color: #ffffff;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+}
+
+.rectangle {
+  background: red;
+  position: absolute;
+  width: 165px;
+  height: 8px;
+  top: 28px;
+  left: 38px;
+}
+
+.heading > div > span {
+  font-family: 'Roboto';
+  color: rgba(0, 150, 255, 1);
+}
+/*********************Feature styling********************************/
+.feature_list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  position: absolute;
+  /* top: 280px;
+  left: 144px; */
+  top: 160px;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.list img {
+  max-width: 66px;
+  max-height: 66px;
+}
+
+.list h1 {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 32px;
+}
+/*********************Rightpanel styling********************************/
+.right_panel {
+  background: rgba(255, 255, 255, 1);
+  width: 549px;
+  height: 750px;
+  position: absolute;
+  top: 140px;
+  right: 102px;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+/**progress bar styling**/
+.progress_bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  column-gap: 50px;
+  margin-top: 32px;
+}
+
+.stage {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  row-gap: -10px;
 }
 
-.App-link {
-  color: #61dafb;
+/**heading styling**/
+.right_panel > p {
+  font-family: Roboto;
+  font-size: 24px;
+  margin-top: 0px;
+  font-weight: 600;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/**input container styling**/
+.text_field {
+  border: 2px solid rgba(190, 190, 190, 1);
+  border-radius: 4px;
+  width: 501px;
+  height: 65px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  column-gap: 140px;
+  position: relative;
+}
+
+.text_field_gray {
+  border: 2px solid rgba(190, 190, 190, 1);
+  color: rgba(190, 190, 190, 1);
+  border-radius: 4px;
+  width: 501px;
+  height: 65px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  column-gap: 140px;
+  position: relative;
+}
+
+.text_field_green {
+  border: 2px solid rgba(71, 186, 104, 1);
+  background: rgba(215, 237, 221, 1);
+  border-radius: 4px;
+  width: 501px;
+  height: 65px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  column-gap: 140px;
+  position: relative;
+}
+
+.category_red {
+  color: rgba(255, 255, 255, 1);
+  align-items: center;
+  position: absolute;
+  left: 87px;
+  width: 121px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 12px;
+  background: rgba(247, 113, 113, 1);
+  border-radius: 0px 0px 4px 4px;
+  z-index: +1;
+}
+
+.category_green {
+  color: rgba(255, 255, 255, 1);
+  align-items: center;
+  position: absolute;
+  left: 87px;
+  width: 121px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 12px;
+  background: rgba(71, 186, 104, 1);
+  border-radius: 0px 0px 4px 4px;
+  z-index: +1;
+}
+
+.field1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.field1 > p {
+  font-family: 'Roboto';
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.field2 {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5 px;
+  align-items: end;
+  justify-content: center;
+}
+
+.field2 > p {
+  margin: 0px;
+}
+
+.total_font {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(60, 72, 82, 1);
+}
+
+.fee_font {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(60, 72, 82, 1);
+}
+
+.month_font {
+  font-family: Roboto;
+  font-size: 10px;
+  font-weight: 500;
+  color: rgba(190, 190, 190, 1);
 }
