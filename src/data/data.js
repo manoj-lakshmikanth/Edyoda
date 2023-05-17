@@ -8,7 +8,7 @@ export const data = [
   { icon: Icon1, description: 'Job relevant courses', highlight: '100+' },
   { icon: Icon2, description: 'Hours of content', highlight: '20000+' },
   { icon: Icon3, description: 'webinar access', highlight: 'Exclusive' },
-  { icon: Icon4, description: 'Scholarship worth', highlight: '₹94500' },
+  { icon: Icon4, description: 'Scholarship worth', highlight: '₹94,500' },
   { icon: Icon5, description: 'learning experience', highlight: 'Ad Free' },
 ];
 
@@ -18,23 +18,27 @@ export const subscriptionDetails = [
     total: '₹99',
     feePerMonth: '₹8',
     category: 'Offer Expired',
+    month: 12,
   },
   {
     subscription: '12 Months Subscription',
     total: '₹179',
     feePerMonth: '₹15',
     category: 'Recommended',
+    month: 12,
   },
   {
     subscription: '6 Months Subscription',
     total: '₹149',
     feePerMonth: '₹25',
     category: '',
+    month: 6,
   },
   {
     subscription: '3 Months Subscription',
     total: '₹99',
     feePerMonth: '₹33',
     category: '',
+    month: 3,
   },
 ];
