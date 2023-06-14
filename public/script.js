@@ -1,5 +1,5 @@
 const convertedVapidKey = urlBase64ToUint8Array(
-  'BCPdgS4aIvAZ-jwWPwHovpFvgjNDe5pKLDkJKmo6D-9ePuTbVGwD_z1XR10btRUuoZ4J-6fiDtuM724yqalt3w8'
+  'BMlvzAmPI8CePLqSaRKbTiOuMnQAhBy6kh66ca_DRIh-9IToKERgpG5VFueXN8dMh-qcvdmJ1QqKr5PtZPQMyjA'
 );
 
 function urlBase64ToUint8Array(base64String) {
@@ -19,7 +19,7 @@ function urlBase64ToUint8Array(base64String) {
 }
 
 const key =
-  'BCPdgS4aIvAZ-jwWPwHovpFvgjNDe5pKLDkJKmo6D-9ePuTbVGwD_z1XR10btRUuoZ4J-6fiDtuM724yqalt3w8';
+  'BMlvzAmPI8CePLqSaRKbTiOuMnQAhBy6kh66ca_DRIh-9IToKERgpG5VFueXN8dMh-qcvdmJ1QqKr5PtZPQMyjA';
 const publickey = key;
 
 if ('serviceWorker' in navigator && 'PushManager' in window) {
