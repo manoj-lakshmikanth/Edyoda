@@ -25,7 +25,9 @@ self.addEventListener('push', (event) => {
   const title = data.title || 'Push Notification';
   const options = {
     body: data.body || 'You have a new notification',
-    icon: data.icon || '/path/to/default/icon.png',
+    icon:
+      `https://letsnotify.in/backend/letsnotify/app/src/template/${data.icon}` ||
+      '/path/to/default/icon.png',
     badge: data.badge || '/path/to/badge.png',
   };
 
